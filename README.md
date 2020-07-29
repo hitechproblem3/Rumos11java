@@ -1,2 +1,3 @@
 # Rumos11java
-Projecto da Academia Java
+Projecto Banco da Academia Java
+com base de dados em Mysql
