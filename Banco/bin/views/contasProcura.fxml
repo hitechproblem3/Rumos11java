@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="1313.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientesProcuraController">
+    <top>
+        <Label text="Lista de Contas" BorderPane.alignment="CENTER">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <TableView fx:id="tv_contas" onMousePressed="#selecionaRegisto" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <columns>
+                <TableColumn fx:id="colunaId" prefWidth="92.0" resizable="false" text="Código" />
+            <TableColumn fx:id="colunaNumConta" prefWidth="208.0" text="Número de Conta" />
+                <TableColumn fx:id="colunaCliente" prefWidth="523.0" resizable="false" text="Cliente" />
+            <TableColumn fx:id="colunaSaldo" prefWidth="235.0" resizable="false" text="Saldo" />
+            <TableColumn fx:id="colunaTipoConta" prefWidth="250.0" resizable="false" text="Tipo de Conta" />
+            </columns>
+        </TableView>
+    </center>
+</BorderPane>

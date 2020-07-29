@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="453.0" prefWidth="798.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ClientesController">
+   <children>
+      <Label alignment="CENTER" layoutY="21.0" prefHeight="25.0" prefWidth="798.0" text="Tabela de Clientes" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Line endX="690.0" layoutX="108.0" layoutY="62.0" startX="-108.0" />
+      <Label layoutX="43.0" layoutY="83.0" prefHeight="17.0" prefWidth="91.0" text="Código" />
+      <Label layoutX="43.0" layoutY="120.0" text="Nome" />
+      <Label layoutX="43.0" layoutY="157.0" text="Telefone" />
+      <Label layoutX="45.0" layoutY="199.0" text="Email" />
+      <Label layoutX="42.0" layoutY="241.0" text="Profissão" />
+      <Label layoutX="43.0" layoutY="281.0" prefHeight="17.0" prefWidth="91.0" text="Tipo de Cliente" />
+      <TextField fx:id="txt_Nome" layoutX="156.0" layoutY="116.0" onKeyPressed="#act_Nome" prefHeight="25.0" prefWidth="333.0" />
+      <TextField fx:id="txt_Telef" layoutX="156.0" layoutY="153.0" onKeyPressed="#act_Telef" prefHeight="25.0" prefWidth="118.0" />
+      <TextField fx:id="txt_Email" layoutX="156.0" layoutY="195.0" onKeyPressed="#act_Email" prefHeight="25.0" prefWidth="333.0" />
+      <TextField fx:id="txt_Profissao" layoutX="156.0" layoutY="237.0" onKeyPressed="#act_Profissao" prefHeight="25.0" prefWidth="333.0" />
+      <Button fx:id="btn_ProcuraCli" layoutX="506.0" layoutY="116.0" mnemonicParsing="false" onAction="#act_ProcuraCli" text="Procurar" />
+      <Line endX="690.0" layoutX="108.0" layoutY="354.0" startX="-108.0" />
+      <Button fx:id="btn_Cancela" layoutX="708.0" layoutY="407.0" mnemonicParsing="false" onAction="#act_Cancela" text="Cancelar" />
+      <Button fx:id="btn_Sair" layoutX="624.0" layoutY="407.0" mnemonicParsing="false" onAction="#act_Sair" prefHeight="25.0" prefWidth="62.0" text="Sair" />
+      <Button fx:id="btn_Apaga" disable="true" layoutX="541.0" layoutY="407.0" mnemonicParsing="false" onAction="#act_Apaga" prefHeight="25.0" prefWidth="62.0" text="Apagar" />
+      <Button fx:id="btn_Guarda" disable="true" layoutX="459.0" layoutY="407.0" mnemonicParsing="false" onAction="#act_Guarda" prefHeight="25.0" prefWidth="62.0" text="Guardar" />
+      <Label fx:id="lbl_Id" layoutX="156.0" layoutY="79.0" prefHeight="25.0" prefWidth="69.0" />
+      <Line endX="698.0" layoutX="100.0" layoutY="393.0" startX="-100.0" />
+      <Label fx:id="lbl_descr" layoutX="29.0" layoutY="366.0" prefHeight="17.0" prefWidth="755.0" />
+      <TextField fx:id="txt_tipoCli" layoutX="156.0" layoutY="277.0" onKeyPressed="#act_tipoCli" prefHeight="25.0" prefWidth="172.0" />
+      <Label fx:id="lbl_Aviso" alignment="CENTER" contentDisplay="CENTER" layoutX="679.0" layoutY="71.0" prefHeight="27.0" prefWidth="98.0" text="" textAlignment="CENTER" textFill="#f20846">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
